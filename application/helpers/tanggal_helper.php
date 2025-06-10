@@ -74,19 +74,19 @@ if (!function_exists('status_sisa_hari')) {
     }
 }
 
-// if (!function_calls('warna_sisa_hari')) {
-//     function warna_sisa_hari($sisa_hari) {
-//         if ($sisa_hari < 0) {
-//             return 'danger';
-//         } elseif ($sisa_hari < 3) {
-//             return 'danger';
-//         } elseif ($sisa_hari <= 7) {
-//             return 'warning';
-//         } else {
-//             return 'success';
-//         }
-//     }
-// }
+if (!function_calls('warna_sisa_hari')) {
+    function warna_sisa_hari($sisa_hari) {
+        if ($sisa_hari < 0) {
+            return 'danger';
+        } elseif ($sisa_hari < 3) {
+            return 'danger';
+        } elseif ($sisa_hari <= 7) {
+            return 'warning';
+        } else {
+            return 'success';
+        }
+    }
+}
 
 if (!function_exists('rentang_tanggal')) {
     function rentang_tanggal($dari, $sampai) {
